@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex h-[100vh] w-[100vw] flex-wrap items-center justify-center gap-5">
       <Left setKeys={setKeys} />
-      <Right keys={keys} />
+      {keys.length ? <Right keys={keys} /> : null}
     </div>
   );
 }
